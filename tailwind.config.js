@@ -8,7 +8,7 @@ module.exports = {
       },
       colors:{
          'Light-red':'hsl(0, 100%, 67%)',
-         'Light-red-alpha':'hsla(0, 100%, 67%,0.3)',
+         'Light-red-alpha':'hsla(0, 100%, 67%,0.1)',
          'Orangey-yellow': 'hsl(39, 100%, 56%)',
          'Orangey-yellow-alpha': 'hsl(39, 100%, 56%,0.1)',
          'Green-teal': 'hsl(166, 100%, 37%)',

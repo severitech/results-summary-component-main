@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
     <link
       rel="icon"
@@ -16,75 +19,93 @@
 
     <title>Frontend Mentor | Results summary component</title>
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <!-- Mobile: 375px
  Desktop: 1440px -->
   <body class="font-Hanken-Grotesk">
-    <section class="w-[375px] mx-auto bg-White mb-10 shadow-lg shadow-Dark-gray-blue">
+    <section
+      class="w-[375px] mx-auto bg-White mb-10 shadow-lg shadow-Dark-gray-blue
+      md:flex md:mb-20 md:mt-20 md:w-[740px] md:h-[512px] md:rounded-3xl">
       <!-- parte azul -->
-      <div class = "bg-gradient-to-b from-Light-slate-blue  to-Light-royal-blue h-[356px]">
-        <h2>Your Result</h2>
-        <div>
-          <p>76</p>
-          <p>of 100</p>
+      <div
+        class="bg-gradient-to-b from-Light-slate-blue to-Light-royal-blue h-[356px] pt-8 px-10 text-center rounded-b-3xl md:w-[370px] md:h-full md: rounded-3xl md:pt-12 "
+      >
+        <h2 class="mb-6 text-Light-lavender text-[18px] md:mb-10 md:text-3xl">Your Result</h2>
+        <div
+          class="bg-gradient-to-b from-Light-royal-blue to-Light-slate-blue rounded-full h-[140px] w-[140px] mx-auto grid place-content-center mb-6 text-[18px] md:mb-10"
+        >
+          <p class="text-White text-5xl font-bold md:text-6xl">76</p>
+          <p class="text-Light-lavender">of 100</p>
         </div>
 
-        <p>Great</p>
-        <p>You scored higher than 65% of the people who have taken these</p>
-        tests.
+        <p class="text-White text-[18px] font-bold md:text-3xl md:mb-6">Great</p>
+        <p class="text-Light-lavender">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
       </div>
       <!-- //parte blanca -->
-      <div>
-        <h2>Summary</h2>
+      <div class="p-8 h-[465px] md:w-[370px] md:py-14 md:px-10">
+        <h2 class="text-[18px] mb-6 font-bold md:text-2xl">Summary</h2>
         <ul>
-          <li>
-            <p>
+          <li
+            class="bg-Light-red-alpha flex place-content-between p-3 rounded-lg mb-4 h-[64px] items-center md:text-xl md:px-4"
+          >
+            <p class="text-Light-red flex gap-2">
               <img src="../assets/images/icon-reaction.svg" alt="" />
               <span>Reaction</span>
             </p>
-            <p>80 <span>/100</span></p>
+            <p class="font-bold">
+              80 <span class="text-Dark-gray-blue font-normal">/100</span>
+            </p>
           </li>
-          <li>
-            <p>
+          <li
+            class="bg-Orangey-yellow-alpha flex place-content-between p-3 rounded-lg mb-4 h-[64px] items-center  md:text-xl md:px-4"
+          >
+            <p class="text-Orangey-yellow flex gap-2">
               <img src="../assets/images/icon-memory.svg" alt="" />
               <span>Memory</span>
             </p>
-            <p>92 <span>/100</span></p>
+            <p class="font-bold">
+              92 <span class="text-Dark-gray-blue font-normal">/100</span>
+            </p>
           </li>
-          <li>
-            <p>
+          <li
+            class="bg-Green-teal-alpha flex place-content-between p-3 rounded-lg mb-4 h-[64px] items-center  md:text-xl md:px-4"
+          >
+            <p class="text-Green-teal flex gap-2">
               <img src="../assets/images/icon-verbal.svg" alt="" />
               <span>Verbal</span>
             </p>
-            <p>61 <span>/100</span></p>
+            <p class="font-bold">
+              61 <span class="text-Dark-gray-blue font-normal">/100</span>
+            </p>
           </li>
-          <li>
-            <p>
+          <li
+            class="bg-Cobalt-blue-alpha flex place-content-between p-3 rounded-lg mb-4 h-[64px] items-center  md:text-xl md:px-4 md:mb-5"
+          >
+            <p class="text-Cobalt-blue flex gap-2">
               <img src="../assets/images/icon-visual.svg" alt="" />
               <span>Visual</span>
             </p>
-            <p>72 <span>/100</span></p>
+            <p class="font-bold">
+              72 <span class="text-Dark-gray-blue font-normal">/100</span>
+            </p>
           </li>
         </ul>
-        <button>Continue</button>
+        <button
+          class="bg-Dark-gray-blue text-White w-full h-11 rounded-3xl text-[18px] hover:bg-gradient-to-b from-Light-slate-blue to-Light-royal-blue"
+        >
+          Continue
+        </button>
       </div>
     </section>
 
-    <div class="attribution">
+    <div class=" text-center m-4">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a class=" text-Violet-blue font-bold hover:text-violet-400" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by
-      <a href="https://github.com/severitech" target="_blank">Severitech</a>.
+      <a class=" text-Violet-blue font-bold hover:text-violet-400"href="https://github.com/severitech" target="_blank">Severitech</a>.
     </div>
   </body>
 </html>
